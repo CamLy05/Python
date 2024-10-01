@@ -1,0 +1,8 @@
+#Bài 24 Đi đường ngắn nhất
+# d1 là cửa hàng 1 , d2 là cửa hàng 2 , d3 là con đường khác
+# xuất phát từ nhà chọn con đường nào để vừa đến hai của hàng mà nhanh nhất
+#d1 nhà d2 
+#    d3
+
+d1,d2,d3=map(int,input().split())
+print(min(d1 + d2 + d3, 2*(d1 + d3), 2*(d1 + d2),2 *(d2 +d3)))
